@@ -1,20 +1,36 @@
+* {
+    text-align: right;
+}
+
 body {
     background-image: url(background_image.jpg);
     background-size: cover;
 }
 
-h2 {
-    color: red;
+h2, p {
+    color: black;
     text-align: center;
     border: 5px solid purple;
     cursor: pointer;
 }
 
-p {
-    color: black;
-}
-
 li {
     list-style: none;
     display: inline-block;
+}
+
+.webtext {
+    border: 5px dashed blue;
+}
+
+.active {
+    color: red;
+}
+
+#div1 {
+    background-color: rgb(0, 0, 255, 0.2);
+}
+
+#div2 {
+    background-color: rgb(255, 0, 0, 0.2);
 }
