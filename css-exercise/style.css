@@ -14,6 +14,24 @@ h2, p {
     cursor: pointer;
 }
 
+p {
+    line-height: 10px;
+    font-style: italic;
+    font-size: 80%;
+    font-weight: bold;
+    font-family: 'Anek Devanagari', cursive;
+}
+
+
+img {
+    float: left;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}
+
 li {
     list-style: none;
     display: inline-block;
