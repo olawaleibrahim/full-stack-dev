@@ -1,10 +1,5 @@
-function multiply(a, b) {
-    if (a > 10 || b > 10) {
-        return "this is too hard";
-    }
-    else {
-        return a * b;
-    }
-}
+var fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
 
-alert(multiply(5, 6));
+fruits.shift();
+fruits.sort();
+fruits.reverse();
