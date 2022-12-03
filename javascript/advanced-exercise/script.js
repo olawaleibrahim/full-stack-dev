@@ -95,7 +95,6 @@ compose(sum, sum)(5);
 
 // Avoiding side effetcs/functional purity
 
-
 // advanced arrays
 const array = [1, 2, 10, 16];
 const double = [];
@@ -120,4 +119,27 @@ const reduceArray = array.reduce((accumulator, num) => {
     return accumulator + num
 }, 0);
 
-console.log("reduce". reduceArray)
+console.log("reduce", reduceArray);
+
+// objects -> instantiation
+class Player {
+    constructor(username, type) {
+        this.username = username;
+        this.type = type;
+    }
+    introduce() {
+        console.log(`Hi, I am ${this.username}, I am a ${this.type}.`)
+    }
+}
+
+class Wizard extends Player {
+    constructor(name, type) {
+        super(name, type)
+    }
+    play() {
+        console.log(`Weeeee I am a ${this.type}`);
+    }
+}
+
+const wizard1 = new Wizard("Zeddicus", "First Order Wizard");
+const wizard2 = new Wizard("Shota", "Second Order Wizard");
