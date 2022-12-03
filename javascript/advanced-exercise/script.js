@@ -67,3 +67,30 @@ const greetingBest = `Hello ${username} you seem to be ${age-10}. What a lovely 
 
 // arrow functions
 const add = (a, b) => a + b;
+
+// advanced functions
+// closures
+const first = () => {
+    const greet = "Hi";
+    const second = () => {
+        alert(greet);
+    }
+    return second;
+}
+
+const newFunc = first();
+newFunc();
+
+// currying
+const multiply = (a, b) => a * b;
+const curriedMultiply = (a) => (b) => a * b;
+curriedMultiply(3);
+
+// compose
+const compose = (f, g) => (a) => f(g(a));
+
+const sum = (num) => num + 1;
+
+compose(sum, sum)(5);
+
+// Avoiding side effetcs/functional purity
