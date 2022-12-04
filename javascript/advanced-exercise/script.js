@@ -235,3 +235,8 @@ let weight2 = andrei_pokemon.pikachu.weight;
 console.log(weight);
 
 // Nullish Coalescing Operator ??
+
+
+// ES2021
+const str = 'ZTM is the best of the best';
+str.replaceAll("best", "worst");
