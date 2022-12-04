@@ -247,3 +247,10 @@ arr[arr.length - 2];
 
 arr.at(-2)
 // ES2022 feature to be continued...
+
+// debugging
+const flattened = [[0, 1], [2, 3], [4, 5]].reduce(
+    (accumulator, array) => {
+        debugger;
+        return accumulator.concat(array)
+    }, []);
