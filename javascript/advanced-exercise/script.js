@@ -240,3 +240,10 @@ console.log(weight);
 // ES2021
 const str = 'ZTM is the best of the best';
 str.replaceAll("best", "worst");
+
+// ES2022 .at()
+const arr = [100, 200, 400, 5000, 10];
+arr[arr.length - 2];
+
+arr.at(-2)
+// ES2022 feature to be continued...
