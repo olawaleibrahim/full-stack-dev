@@ -143,3 +143,23 @@ class Wizard extends Player {
 
 const wizard1 = new Wizard("Zeddicus", "First Order Wizard");
 const wizard2 = new Wizard("Shota", "Second Order Wizard");
+
+
+// ES8 additions
+let newObj = {
+    username0: "Santa",
+    username1: "Rudolf",
+    username2: "Mr. Grinch"
+}
+
+// keys
+Object.keys(newObj).forEach((key, index) => {
+    console.log(key, newObj[key]);
+})
+
+// values
+
+// entries
+Object.entries(newObj).map(value => {
+    return value[1] + value[0].replace("username", " ");
+})
