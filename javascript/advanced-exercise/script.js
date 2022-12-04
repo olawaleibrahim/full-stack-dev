@@ -204,3 +204,34 @@ const detailedBasket = {
 for (item in detailedBasket) {
     console.log(item)
 }
+
+// ES2020
+// BigInt
+Number.MAX_SAFE_INTEGER;
+9007199254741000n + 3n;
+3n + 5n;
+
+// Optional Chaining Operator ?
+let will_pokemon = {
+    pikachu: {
+        species: "Mouse Pokemon",
+        height: 0.4,
+        weight: 6
+    }
+}
+
+let weight = will_pokemon.pikachu.weight;
+console.log(weight);
+
+let andrei_pokemon = {
+    raichu: {
+        species: "Mouse Pokemon",
+        height: 0.6,
+        weight: 30
+    }
+}
+
+let weight2 = andrei_pokemon.pikachu.weight;
+console.log(weight);
+
+// Nullish Coalescing Operator ??
