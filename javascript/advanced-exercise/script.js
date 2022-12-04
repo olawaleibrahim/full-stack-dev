@@ -163,3 +163,24 @@ Object.keys(newObj).forEach((key, index) => {
 Object.entries(newObj).map(value => {
     return value[1] + value[0].replace("username", " ");
 })
+
+
+// ES10
+// flat()
+const newArray = [1, 2, [3, 4, [5]]];
+newArray.flat();
+
+// flatMap
+
+// trimStart(), trimEnd()
+
+// fromEntries
+userProfiles = [["commanderTom", 23], ["derekZlander", 40], ["hansel", 34]];
+Object.fromEntries(userProfiles)
+
+// try and catch
+try {
+    true + "hi"
+} catch {
+    console.log("you messed up");
+}
