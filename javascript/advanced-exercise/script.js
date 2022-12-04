@@ -184,3 +184,23 @@ try {
 } catch {
     console.log("you messed up");
 }
+
+// advanced loops
+
+// for of
+basket = ["oranges", "apples", "grapes"];
+for (item of basket) {
+    console.log(item);
+}
+
+// for in - object properties
+// enumerating
+const detailedBasket = {
+    apples: 5,
+    grapes: 10,
+    oranges: 200
+}
+
+for (item in detailedBasket) {
+    console.log(item)
+}
