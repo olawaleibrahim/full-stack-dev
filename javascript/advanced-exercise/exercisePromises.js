@@ -27,8 +27,8 @@ const urls = [
   'http://swapi.dev/api/people/4'
 ]
 
-Promise.all([people1, people2, people3, people4]).then(
-  values => console.log(values)
+Promise.all(
+  
 )
 
 
